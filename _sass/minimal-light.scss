@@ -13,7 +13,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #223e36;
+        background-color: #5b6264;
         color: #dadbdf;
     }
 }
@@ -266,16 +266,16 @@ papertitle {
     width: 100%;
 }
 
-// .image.avatar {
-//     border-radius: 100%;
-// }
+.image.avatar {
+    border-radius: 0;
+}
 
 .image.avatar:before {
     display: none;
 }
 
 .image.avatar img {
-    // border-radius: 100%;
+    border-radius: 0;
     width: 45%;
     padding: 20px;
     // border: 1px solid #ddd;
@@ -595,7 +595,7 @@ screen and (max-width: 960px) {
 
 
     .image.avatar img {
-        // border-radius: 100%;
+        border-radius: 100%;
         width: 117px;
         padding: 20px;
     }
@@ -657,7 +657,7 @@ screen and (max-width: 480px) {
     }
 
     .image.avatar img {
-        // border-radius: 100%;
+        border-radius: 100%;
         width: 95px;
         padding: 20px;
     }
