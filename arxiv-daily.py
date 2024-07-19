@@ -56,6 +56,7 @@ AUTHORS = [
     "Zico Kolter",
     "Dawn Song",
     "Bo Li",
+    "Percy Liang",
 ]
 
 
