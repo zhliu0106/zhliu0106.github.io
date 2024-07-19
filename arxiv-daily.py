@@ -137,7 +137,7 @@ tabs_info = defaultdict(dict)
 new_date = cover_timezones(datetime.now() - timedelta(new_day)).strftime("%Y %b %d, %a")
 client = arxiv.Client(num_retries=10, page_size=500)
 for name in CLASSES:
-    search = arxiv.Search(query=name, sort_by=arxiv.SortCriterion.LastUpdatedDate)
+    search = arxiv.Search(query=name, sort_by=arxiv.SortCriterion.SubmittedDate)
     results = client.results(search)
     # for paper in search.results():
     max_iter = 1000
@@ -151,12 +151,12 @@ for name in CLASSES:
         max_iter -= 1
         if max_iter < 0:
             break
-        date = datetime.now(paper.updated.tzinfo) - timedelta(max_day)
-        print(f"Find paper {paper.entry_id} {paper.title} {paper.updated}")
-        if paper.updated.date() < date.date():
+        date = datetime.now(paper.published.tzinfo) - timedelta(max_day)
+        print(f"Find paper {paper.entry_id} {paper.title} {paper.published}")
+        if paper.published.date() < date.date():
             break
         # Convert to UTC+8
-        date = cover_timezones(paper.updated).strftime("%Y %b %d, %a")
+        date = cover_timezones(paper.published).strftime("%Y %b %d, %a")
         any_match = []
         title, matched = match(paper.title, KEYS)
         any_match.extend(matched)
@@ -178,7 +178,7 @@ for name in CLASSES:
             paper_content += f'{text_title("[COMMENTS]")}{comments} <br>\n'
         paper_content += f'{text_title("[LINK]")}{link(paper.entry_id)} <br>\n'
         paper_content += (
-            f'{text_title("[DATE]")}{cover_timezones(paper.updated)} <br>\n'
+            f'{text_title("[DATE]")}{cover_timezones(paper.published)} <br>\n'
         )
         categories = "    ".join([texttt(c) for c in paper.categories if c in CLASSES])
         paper_content += f'{text_title("[CATEGORIES]")}{categories} <br>\n'
