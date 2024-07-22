@@ -57,6 +57,7 @@ AUTHORS = [
     "Dawn Song",
     "Bo Li",
     "Percy Liang",
+    "David Wagner",
 ]
 
 
