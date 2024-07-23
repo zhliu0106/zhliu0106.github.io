@@ -44,6 +44,11 @@ KEYS = {
     "private": "Privacy",
     "Privacy": "Privacy",
     "Private": "Privacy",
+    # Unlearning related
+    "unlearning": "Unlearning",
+    "Unlearning": "Unlearning",
+    "Machine Unlearning": "Unlearning",
+    "machine unlearning": "Unlearning",
 }
 
 
