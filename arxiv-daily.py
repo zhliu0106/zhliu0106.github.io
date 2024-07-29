@@ -63,6 +63,7 @@ AUTHORS = [
     "Bo Li",
     "Percy Liang",
     "David Wagner",
+    "Dan Hendrycks",
 ]
 
 
