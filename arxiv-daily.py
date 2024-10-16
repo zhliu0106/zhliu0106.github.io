@@ -14,6 +14,13 @@ KEYS = {
     "large language models": "Large Language Model",
     "LLM": "Large Language Model",
     "LLMs": "Large Language Model",
+    # Alignment related
+    "alignment": "Alignment",
+    "Alignment": "Alignment",
+    # Reinforcement learning related
+    "reinforcement learning": "Reinforcement Learning",
+    "Reinforcement Learning": "Reinforcement Learning",
+    "RL": "Reinforcement Learning",
     # Agent related
     "agent": "Agent",
     "agents": "Agent",
@@ -39,6 +46,11 @@ KEYS = {
     "Trust": "Trustworthy",
     "Trustworthiness": "Trustworthy",
     "trustworthiness": "Trustworthy",
+    # Decoding related
+    "decoding": "Decoding",
+    "Decoding": "Decoding",
+    "inference": "Decoding",
+    "Inference": "Decoding",
     # Privacy related
     "privacy": "Privacy",
     "private": "Privacy",
@@ -49,6 +61,12 @@ KEYS = {
     "Unlearning": "Unlearning",
     "Machine Unlearning": "Unlearning",
     "machine unlearning": "Unlearning",
+    # Bias related
+    "bias": "Bias",
+    "Bias": "Bias",
+    # Fairness related
+    "fairness": "Fairness",
+    "Fairness": "Fairness",
 }
 
 
@@ -168,9 +186,7 @@ for name in CLASSES:
         any_match = []
         title, matched = match(paper.title, KEYS)
         any_match.extend(matched)
-        authors, matched = match(
-            ", ".join([f"{author}" for author in paper.authors]), AUTHORS
-        )
+        authors, matched = match(", ".join([f"{author}" for author in paper.authors]), AUTHORS)
         any_match.extend(matched)
         abstract, matched = match(paper.summary, KEYS)
         any_match.extend(matched)
@@ -185,9 +201,7 @@ for name in CLASSES:
         if comments:
             paper_content += f'{text_title("[COMMENTS]")}{comments} <br>\n'
         paper_content += f'{text_title("[LINK]")}{link(paper.entry_id)} <br>\n'
-        paper_content += (
-            f'{text_title("[DATE]")}{cover_timezones(paper.published)} <br>\n'
-        )
+        paper_content += f'{text_title("[DATE]")}{cover_timezones(paper.published)} <br>\n'
         categories = "    ".join([texttt(c) for c in paper.categories if c in CLASSES])
         paper_content += f'{text_title("[CATEGORIES]")}{categories} <br>\n'
         for key in any_match:
@@ -205,18 +219,14 @@ with open("arxiv.md", "w") as f:
         for i, tab in enumerate(sorted(available_tabs)):
             if tab not in domain:
                 continue
-            f.write(
-                f'<li><a class="button" href="#{normalize_id(tab)}">{upper_first(tab)}</a>'
-            )
+            f.write(f'<li><a class="button" href="#{normalize_id(tab)}">{upper_first(tab)}</a>')
             if tabs_info[tab].get("new", False):
                 f.write('<span class="new-dot"> </span>')
             f.write("</li>\n")
         f.write('<li style="margin-right: auto;"><div></div></li>\n')
         f.write(f'<hr class="tab-nav-divider {" last" if i == 2 else ""}">\n')
     for i, date in enumerate(sorted(papers_by_date.keys(), reverse=True)):
-        f.write(
-            f'<li><a class="button{" active" if i == 0 else ""}" href="#{normalize_id(date)}">{date}</a></li>\n'
-        )
+        f.write(f'<li><a class="button{" active" if i == 0 else ""}" href="#{normalize_id(date)}">{date}</a></li>\n')
     f.write("</ul>\n\n")
     f.write(f"<hr>\n")
 
@@ -224,9 +234,7 @@ with open("arxiv.md", "w") as f:
     for i, tab in enumerate(sorted(available_tabs)):
         f.write(f'<div class="tab-pane" id="{normalize_id(tab)}">\n')
         for j, date in enumerate(sorted(papers[tab].keys(), reverse=True)):
-            f.write(
-                f'<details {"open" if j == 0 else ""}><summary class="date">{date}</summary>\n\n'
-            )
+            f.write(f'<details {"open" if j == 0 else ""}><summary class="date">{date}</summary>\n\n')
             f.write("<ul>\n")
             for title, paper in papers[tab][date].items():
                 f.write('<li class="arxiv-paper">\n')
@@ -236,9 +244,7 @@ with open("arxiv.md", "w") as f:
             f.write("</details>\n\n")
         f.write("</div>\n")
     for i, date in enumerate(sorted(papers_by_date.keys(), reverse=True)):
-        f.write(
-            f'<div class="tab-pane{" active" if i == 0 else ""}" id="{normalize_id(date)}">\n'
-        )
+        f.write(f'<div class="tab-pane{" active" if i == 0 else ""}" id="{normalize_id(date)}">\n')
         f.write("<ul>\n")
         for title, paper in papers_by_date[date].items():
             f.write('<li class="arxiv-paper">\n')
