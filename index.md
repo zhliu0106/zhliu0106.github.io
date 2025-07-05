@@ -9,6 +9,12 @@ My main research interest focuses on Trustworthy AI and Alignment. Before that, 
 
 ### Publications
 
+* **[Thinking with Images for Multimodal Reasoning: Foundations, Methods, and Future Frontiers](https://arxiv.org/abs/2506.23918)**
+    <p class="vspace"></p>
+    *Zhaochen Su, Peng Xia, Hangyu Guo, __Zhenhua Liu__, Yan Ma, Xiaoye Qu, Jiaqi Liu, Yanshu Li, Kaide Zeng, Zhengyuan Yang, Linjie Li, Yu Cheng, Heng Ji, Junxian He, Yi R. (May) Fung* <br>
+    **Arxiv 2025**
+    <p class="vspace"></p>
+
 * **[UAQFact: Evaluating Factual Knowledge Utilization of LLMs on Unanswerable Questions](https://arxiv.org/abs/2505.23461)**
     <p class="vspace"></p>
     *Chuanyuan Tan, Wenbiao Shao, Hao Xiong, Tong Zhu, __Zhenhua Liu__, Kai Shi, Wenliang Chen* <br>
