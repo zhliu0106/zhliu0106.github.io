@@ -9,6 +9,12 @@ My main research interest focuses on Trustworthy AI and Alignment. Before that, 
 
 ### Publications
 
+* **[Response Attack: Exploiting Contextual Priming to Jailbreak Large Language Models](https://arxiv.org/abs/2507.05248)**
+    <p class="vspace"></p>
+    *Ziqi Miao, Lijun Li, Yuan Xiong, __Zhenhua Liu__, Pengyu Zhu, Jing Shao* <br>
+    **Arxiv 2025**
+    <p class="vspace"></p>
+
 * **[Thinking with Images for Multimodal Reasoning: Foundations, Methods, and Future Frontiers](https://arxiv.org/abs/2506.23918)**
     <p class="vspace"></p>
     *Zhaochen Su, Peng Xia, Hangyu Guo, __Zhenhua Liu__, Yan Ma, Xiaoye Qu, Jiaqi Liu, Yanshu Li, Kaide Zeng, Zhengyuan Yang, Linjie Li, Yu Cheng, Heng Ji, Junxian He, Yi R. (May) Fung* <br>
