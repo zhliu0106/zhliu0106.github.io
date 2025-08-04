@@ -21,7 +21,7 @@ My main research interest focuses on Trustworthy AI and Alignment. Before that, 
     **Arxiv 2025**
     <p class="vspace"></p>
 
-* **[UAQFact: Evaluating Factual Knowledge Utilization of LLMs on Unanswerable Questions](https://arxiv.org/abs/2505.23461)**
+* **[UAQFact: Evaluating Factual Knowledge Utilization of LLMs on Unanswerable Questions](https://aclanthology.org/2025.findings-acl.85/)**
     <p class="vspace"></p>
     *Chuanyuan Tan, Wenbiao Shao, Hao Xiong, Tong Zhu, __Zhenhua Liu__, Kai Shi, Wenliang Chen* <br>
     **ACL (Findings) 2025**
