@@ -12,7 +12,7 @@ My main research interest focuses on Trustworthy AI and Alignment. Before that, 
 * **[Response Attack: Exploiting Contextual Priming to Jailbreak Large Language Models](https://arxiv.org/abs/2507.05248)**
     <p class="vspace"></p>
     *Ziqi Miao, Lijun Li, Yuan Xiong, __Zhenhua Liu__, Pengyu Zhu, Jing Shao* <br>
-    **Arxiv 2025**
+    **AAAI 2026**
     <p class="vspace"></p>
 
 * **[Thinking with Images for Multimodal Reasoning: Foundations, Methods, and Future Frontiers](https://arxiv.org/abs/2506.23918)**
@@ -24,10 +24,10 @@ My main research interest focuses on Trustworthy AI and Alignment. Before that, 
 * **[UAQFact: Evaluating Factual Knowledge Utilization of LLMs on Unanswerable Questions](https://aclanthology.org/2025.findings-acl.85/)**
     <p class="vspace"></p>
     *Chuanyuan Tan, Wenbiao Shao, Hao Xiong, Tong Zhu, __Zhenhua Liu__, Kai Shi, Wenliang Chen* <br>
-    **ACL (Findings) 2025**
+    **ACL 2025**
     <p class="vspace"></p>
 
-* **[Iterative Value Function Optimization for Guided Decoding](https://arxiv.org/pdf/2503.02368)**
+* **[Evolutionary Guided Decoding: Iterative Value Refinement for LLMs](https://arxiv.org/pdf/2503.02368)**
     <p class="vspace"></p>
     *__Zhenhua Liu__, Lijun Li, Ruizhe Chen, Yuxian Jiang, Tong Zhu, Zhaochen Su, Wenliang Chen, Jing Shao* <br>
     **Arxiv 2025**
