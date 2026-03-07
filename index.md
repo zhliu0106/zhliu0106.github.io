@@ -9,6 +9,12 @@ My main research interest focuses on Trustworthy AI and Alignment. Before that, 
 
 ### Publications
 
+* **[AgentVista: Evaluating Multimodal Agents in Ultra-Challenging Realistic Visual Scenarios](https://arxiv.org/pdf/2602.23166)**
+    <p class="vspace"></p>
+    *Zhaochen Su, Jincheng Gao, Hangyu Guo, __Zhenhua Liu__, Lueyang Zhang, Xinyu Geng, Shijue Huang, Peng Xia, Guanyu Jiang, Cheng Wang, Yue Zhang, Yi R Fung, Junxian He* <br>
+    **Arxiv 2026**
+    <p class="vspace"></p>
+
 * **[Response Attack: Exploiting Contextual Priming to Jailbreak Large Language Models](https://arxiv.org/abs/2507.05248)**
     <p class="vspace"></p>
     *Ziqi Miao, Lijun Li, Yuan Xiong, __Zhenhua Liu__, Pengyu Zhu, Jing Shao* <br>
