@@ -27,16 +27,16 @@ My main research interest focuses on Trustworthy AI and Alignment. Before that, 
     **Arxiv 2025**
     <p class="vspace"></p>
 
+* **[Evolutionary Guided Decoding: Iterative Value Refinement for LLMs](https://arxiv.org/pdf/2503.02368)**
+    <p class="vspace"></p>
+    *__Zhenhua Liu__, Lijun Li, Ruizhe Chen, Yuxian Jiang, Tong Zhu, Zhaochen Su, Wenliang Chen, Jing Shao* <br>
+    **ACL 2026**
+    <p class="vspace"></p>
+
 * **[UAQFact: Evaluating Factual Knowledge Utilization of LLMs on Unanswerable Questions](https://aclanthology.org/2025.findings-acl.85/)**
     <p class="vspace"></p>
     *Chuanyuan Tan, Wenbiao Shao, Hao Xiong, Tong Zhu, __Zhenhua Liu__, Kai Shi, Wenliang Chen* <br>
     **ACL 2025**
-    <p class="vspace"></p>
-
-* **[Evolutionary Guided Decoding: Iterative Value Refinement for LLMs](https://arxiv.org/pdf/2503.02368)**
-    <p class="vspace"></p>
-    *__Zhenhua Liu__, Lijun Li, Ruizhe Chen, Yuxian Jiang, Tong Zhu, Zhaochen Su, Wenliang Chen, Jing Shao* <br>
-    **Arxiv 2025**
     <p class="vspace"></p>
 
 * **[Learning to Refuse: Towards Mitigating Privacy Risks in LLMs](https://aclanthology.org/2025.coling-main.114/)**
